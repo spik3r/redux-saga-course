@@ -27,6 +27,9 @@ A function that takes in two arguments `currentState` and `action` and returns a
 A function that takes a `payload` and returns a JSON object `{ type: CREATE_USER_REQUEST, payload: {firstName, lastName} }`
  in this case it gets triggered by the `Create` Button's `handleSubmit` method that triggers the connected `createUserRequest` action 
 
+## SELECTOR
+> A `selector` is simply a function that accepts Redux state as an argument and returns data that is derived from that state.
+>
 ## SAGA
 > By Convention sagas are split up in two types but it also helps with understanding a little
 ### WATCHER
@@ -48,3 +51,8 @@ option* [UI event] (triggers) -> [Action]
 [REDUCER] (updatees the state in the) -> [Store] 
 [Store] (update action triggers) -> [SAGA] 
 [SAGA] (potentially calls more actions causing the reducer to update state and so on...) [ACTION] -> [REDUCER] and so on..
+
+## Further reading/ watching:
+- https://redux-starter-kit.js.org/introduction/quick-start
+- https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html
+- https://egghead.io/courses/building-react-applications-with-idiomatic-redux
